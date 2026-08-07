@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    
+    <style>
+        /* Group selector */    
+       table,tr,th,td{
+
+            border: 2px solid;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            font-size: xx-large;  
+            margin: auto; 
+            
+
+}
+caption{
+    background-color: fuchsia;
+}
+th{
+    background-color: aquamarine;
+    color: black;
+}
+td{
+    background-color: rgba(230, 155, 236, 0.678);
+    color: rgb(6, 6, 29);
+}
+.c{
+    background-color: rgb(158, 206, 228);
+}
+    </style>
+</head>
+<body>
+   <!--Table-->
+
+    <table>
+        <thead>
+        <caption>Student Details</caption>
+        <tr>
+         <th>Name</th>
+         <th>Course</th>
+         <th>class</th>
+         <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pravena</td>
+            <td colspan="3">HTML</td>
+            <!--td>3</td>-->
+            <!--td>987654320</td> -->
+        </tr>
+        <tr>
+            <td>Aishu</td>
+            <td rowspan="3" class="c">Java</td>
+            <td>3</td>
+            <td>967854321</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <!--td>CSS</td>-->
+            <TD>4</td>
+            <td>912345678</td>
+        </tr>
+        <tr>
+            <td>Riya</td>
+            <!--td>JQuery</td>-->
+            <td>1</td>
+            <td>897654321</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">&copy; by Nive</th>
+        </tr>
+    </tfoot>
+        </table>
+    
+</body>
+</html>

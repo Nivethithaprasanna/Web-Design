@@ -1,4 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>document</title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            header{
+                background-color: rgb(133, 236, 205);
+                min-height: 30px;
+                position: fixed;
+                width: 100vw;
+                
+            }
+            ul{
+                display: flex;
+                gap: 40px;
+                justify-content: center;
+                padding: 5px;
+            }
+            li{
+                list-style-type: none;
+                font-size: larger;
+                font-weight: 900;
+            }
+            div{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#h">Home</a></li>
+                    <li><a href="#p">Product</a></li>
+                    <li><a href="#s">Service</a></li>
+                    <li><a href="#a">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+<div style="background-color:rgb(72, 231, 231);" id="h"><h1>Home</h1></div>
+<div style="background-color: rgb(108, 224, 152);" id="p"><h1>Product</h1></div>
+<div style="background-color: rgb(247, 141, 241);" id="s"><h1>Service</h1></div>
+<div style="background-color:rgb(98, 202, 236) ;" id="a"><h1>About</h1></div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
     
 </html>

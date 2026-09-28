@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()" onresize="re()">
+    <h1>Form events</h1>
+
+    <form onsubmit="sub(event)">
+        <input type="text" placeholder="First Name" onfocus="bg(this.id)" id="fn">
+        <br><br>
+        <input type="text" placeholder="Last Name" onfocus="bg(this.id)" id="ln">
+        <br><br>
+        <select onchange="oc()" id="cc">
+            <option value="India">Norway</option>
+            <option value="China">Austria</option>
+            <option value="Japan">Switzerland</option>
+        </select>
+        
+        <br><br>
+        <button type="submit">Submit</button>
+         <!-- <input type="submit" value="Submit Data"> -->
+    </form>
+
+    <h3>Select Country : <span id="country"></span></h3>
+
+    <h3 id="show"></h3>
+
+
+    <h3 class="si"></h3>
+    <h3 class="ch">0</h3>
+
+    
+
+
+    <script>
+        function bg(c){
+            document.getElementById(c).style.backgroundColor="bisque";
+        }
+
+        const oc = () => {
+            let country = document.getElementById("cc").value;
+            document.getElementById("country").innerHTML=country;
+        }
+
+
+        function sub (event) {
+            event.preventDefault();
+            document.getElementById("show").innerHTML="Data Submited.."
+            alert("Form Submited")
+        }
+
+        function load(){
+            console.log("Page Loaded...")
+        }
+
+        let count = 0;
+
+        function re(){
+            let size = "Window Width : "+window.outerWidth+" , "+"Window Height : "+window.outerHeight
+            document.getElementsByClassName("si")[0].innerHTML=size;
+            count+=1;
+            document.getElementsByClassName("ch")[0].innerHTML=count;
+
+        }
+        
+    </script>
+</body>
+</html>
